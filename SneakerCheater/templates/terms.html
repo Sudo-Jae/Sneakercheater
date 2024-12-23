@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms & Conditions</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #101010;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+        .terms-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: #202020;
+            border-radius: 5px;
+        }
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .checkbox input {
+            margin-right: 10px;
+        }
+        .agree-button {
+            padding: 15px 25px;
+            color: white;
+            background-color: #FF4500;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="terms-container">
+        <h2>Terms & Conditions</h2>
+        <p>Welcome to SneakerCheater! By using our service, you agree to the following terms...</p>
+        <p>Some legal text goes here that users will never actually read...</p>
+        <div class="checkbox">
+            <input type="checkbox" id="agree">
+            <label for="agree">I agree to the terms and conditions.</label>
+        </div>
+        <a href="/app" class="agree-button" onclick="if (!document.getElementById('agree').checked) { alert('You must agree to the terms!'); return false; }">I Agree</a>
+    </div>
+</body>
+</html>
